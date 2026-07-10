@@ -5,12 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudio ROCA - Corte y Diseño CNC</title>
     <meta name="description" content="Taller de fabricación digital en Durango. Especialistas en Router CNC y Corte Láser en MDF y acrílico.">
+    <!-- Esta línea conecta el HTML con tu archivo de diseño -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header class="header">
         <div class="logo-container">
-            <!-- Referencia al archivo de tu logotipo -->
             <img src="img/IMG_20260227_073117_495.png" alt="Logotipo Estudio ROCA" class="logo">
         </div>
         <nav class="nav-menu">
@@ -23,102 +23,11 @@
     </header>
 
     <main>
-        <!-- Pegar aquí futuras secciones -->
+        <!-- Aquí construiremos las siguientes secciones -->
     </main>
 
     <footer class="footer">
         <p>&copy; 2026 Estudio ROCA - Corte y Diseño. Durango, México.</p>
     </footer>
-
-    <script src="js/main.js"></script>
 </body>
 </html>
-/* Variables de Color (Extraídas de IMG_20260227_073117_495.png) */
-:root {
-    --color-azul: #1D4665;
-    --color-roca: #3B3B3B;
-    --color-madera: #B57342;
-    --color-fondo: #FAFAFA;
-    --color-texto: #333333;
-}
-
-/* Reset Básico y Tipografía */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-body {
-    font-family: 'Segoe UI', system-ui, sans-serif;
-    background-color: var(--color-fondo);
-    color: var(--color-texto);
-    line-height: 1.6;
-    -webkit-font-smoothing: antialiased;
-}
-
-/* Header y Navegación (Diseño Mobile-First) */
-.header {
-    background-color: #FFFFFF;
-    padding: 1rem;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 1.5rem;
-    position: sticky;
-    top: 0;
-    z-index: 100;
-}
-
-.logo {
-    width: 100%;
-    max-width: 220px;
-    height: auto;
-    display: block;
-}
-
-.nav-menu ul {
-    list-style: none;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 1.5rem;
-}
-
-.nav-menu a {
-    text-decoration: none;
-    color: var(--color-roca);
-    font-weight: 600;
-    text-transform: uppercase;
-    font-size: 0.85rem;
-    letter-spacing: 0.5px;
-    transition: color 0.3s ease;
-}
-
-.nav-menu a:hover,
-.nav-menu a:active {
-    color: var(--color-azul);
-}
-
-/* Footer Básico */
-.footer {
-    text-align: center;
-    padding: 2rem 1rem;
-    background-color: var(--color-roca);
-    color: #FFFFFF;
-    font-size: 0.9rem;
-}
-
-/* Media Query para Tablets y Desktop */
-@media (min-width: 768px) {
-    .header {
-        flex-direction: row;
-        justify-content: space-between;
-        padding: 1rem 5%;
-    }
-    
-    .nav-menu a {
-        font-size: 0.95rem;
-    }
-}
