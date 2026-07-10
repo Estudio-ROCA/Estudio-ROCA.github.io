@@ -219,3 +219,83 @@ body {
         grid-template-columns: repeat(3, 1fr);
     }
 }
+/* --- Sección Contacto --- */
+.contacto {
+    padding: 4rem 1.5rem;
+    background-color: #FFFFFF;
+    text-align: center;
+}
+
+.contacto h2 {
+    color: var(--color-azul);
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.contacto-sub {
+    color: var(--color-roca);
+    margin-bottom: 3rem;
+    font-size: 1.05rem;
+}
+
+.grid-contacto {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.contacto-info, .contacto-accion {
+    background-color: var(--color-fondo);
+    padding: 2.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    border-top: 4px solid var(--color-azul);
+}
+
+.contacto-info h3, .contacto-accion h3 {
+    color: var(--color-roca);
+    margin-bottom: 1.5rem;
+    font-size: 1.3rem;
+    border-bottom: 2px solid var(--color-madera);
+    padding-bottom: 0.5rem;
+    display: inline-block;
+}
+
+.contacto-info ul {
+    list-style: none;
+}
+
+.contacto-info li {
+    margin-bottom: 1.2rem;
+    color: #555555;
+    font-size: 1rem;
+}
+
+.contacto-info a {
+    color: var(--color-azul);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+.contacto-info a:hover {
+    color: var(--color-madera);
+}
+
+.contacto-accion p {
+    color: #555555;
+    margin-bottom: 2rem;
+    line-height: 1.6;
+}
+
+/* Media Query para Tablets y Desktop (Grid de 2 columnas) */
+@media (min-width: 768px) {
+    .grid-contacto {
+        grid-template-columns: 1fr 1fr;
+    }
+}
