@@ -87,3 +87,60 @@ body {
         font-size: 0.95rem;
     }
 }
+/* --- Sección Hero --- */
+.hero {
+    text-align: center;
+    padding: 4rem 1.5rem;
+    background-color: var(--color-fondo);
+}
+
+.hero h1 {
+    color: var(--color-azul);
+    font-size: 2.2rem;
+    margin-bottom: 1rem;
+    line-height: 1.2;
+}
+
+.hero p {
+    color: var(--color-roca);
+    font-size: 1.1rem;
+    margin-bottom: 2rem;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Botón Principal */
+.btn-primary {
+    display: inline-block;
+    background-color: var(--color-madera);
+    color: #FFFFFF;
+    padding: 0.8rem 2rem;
+    text-decoration: none;
+    border-radius: 4px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-primary:hover,
+.btn-primary:active {
+    background-color: #9a6036;
+    transform: translateY(-2px);
+}
+
+/* Media Query para Tablets y Desktop (Hero) */
+@media (min-width: 768px) {
+    .hero {
+        padding: 6rem 2rem;
+    }
+    
+    .hero h1 {
+        font-size: 3rem;
+    }
+    
+    .hero p {
+        font-size: 1.25rem;
+    }
+}
