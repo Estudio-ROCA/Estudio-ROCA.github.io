@@ -3,99 +3,122 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estudio ROCA - Corte y Diseño</title>
-    <style>
-        body { 
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
-            margin: 0; 
-            padding: 0; 
-            background-color: #f4f4f9; 
-            color: #333; 
-        }
-        header { 
-            background-color: #1a252f; 
-            color: white; 
-            padding: 3rem 1rem; 
-            text-align: center; 
-        }
-        header h1 { margin: 0; font-size: 2.5rem; letter-spacing: 2px; }
-        header p { font-size: 1.2rem; color: #bdc3c7; }
-        .container { max-width: 1000px; margin: 2rem auto; padding: 0 1rem; }
-        .services { display: flex; gap: 1.5rem; margin-bottom: 3rem; flex-wrap: wrap; }
-        .service-card { 
-            background: white; 
-            padding: 1.5rem; 
-            border-radius: 8px; 
-            box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
-            flex: 1; 
-            min-width: 250px; 
-            text-align: center; 
-            border-top: 4px solid #3498db;
-        }
-        h2 { text-align: center; color: #2c3e50; margin-bottom: 1.5rem; }
-        .gallery { 
-            display: grid; 
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
-            gap: 1.5rem; 
-        }
-        .gallery-item { 
-            background: #e0e0e0; 
-            height: 250px; 
-            border-radius: 8px; 
-            display: flex; 
-            align-items: center; 
-            justify-content: center; 
-            color: #7f8c8d; 
-            font-style: italic; 
-            border: 2px dashed #bdc3c7;
-        }
-        footer { 
-            text-align: center; 
-            padding: 2rem; 
-            background-color: #ecf0f1; 
-            margin-top: 3rem; 
-            color: #7f8c8d;
-        }
-    </style>
+    <title>Estudio ROCA - Corte y Diseño CNC</title>
+    <meta name="description" content="Taller de fabricación digital en Durango. Especialistas en Router CNC y Corte Láser en MDF y acrílico.">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-
-    <header>
-        <h1>Estudio ROCA</h1>
-        <p>Corte y Diseño | Taller de fabricación digital en MDF y Acrílico</p>
+    <header class="header">
+        <div class="logo-container">
+            <!-- Referencia al archivo de tu logotipo -->
+            <img src="img/IMG_20260227_073117_495.png" alt="Logotipo Estudio ROCA" class="logo">
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#portafolio">Portafolio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
 
-    <div class="container">
-        <h2>Nuestros Servicios</h2>
-        <div class="services">
-            <div class="service-card">
-                <h3>Router CNC</h3>
-                <p>Mecanizado preciso y desbaste para proyectos en madera y paneles de gran formato.</p>
-            </div>
-            <div class="service-card">
-                <h3>Corte Láser</h3>
-                <p>Cortes limpios y grabados de alta resolución con acabado profesional.</p>
-            </div>
-            <div class="service-card">
-                <h3>Diseño Personalizado</h3>
-                <p>Modelado y vectorización a la medida para materializar tus ideas.</p>
-            </div>
-        </div>
+    <main>
+        <!-- Pegar aquí futuras secciones -->
+    </main>
 
-        <h2>Catálogo de Proyectos</h2>
-        <div class="gallery">
-            <!-- Estas son cajas de prueba donde irán tus fotos reales -->
-            <div class="gallery-item">[ Espacio para Foto de Proyecto 1 ]</div>
-            <div class="gallery-item">[ Espacio para Foto de Proyecto 2 ]</div>
-            <div class="gallery-item">[ Espacio para Foto de Proyecto 3 ]</div>
-            <div class="gallery-item">[ Espacio para Foto de Proyecto 4 ]</div>
-        </div>
-    </div>
-
-    <footer>
-        <p>Contáctanos para cotizar tu proyecto.</p>
-        <p>© 2026 Estudio ROCA</p>
+    <footer class="footer">
+        <p>&copy; 2026 Estudio ROCA - Corte y Diseño. Durango, México.</p>
     </footer>
 
+    <script src="js/main.js"></script>
 </body>
 </html>
+/* Variables de Color (Extraídas de IMG_20260227_073117_495.png) */
+:root {
+    --color-azul: #1D4665;
+    --color-roca: #3B3B3B;
+    --color-madera: #B57342;
+    --color-fondo: #FAFAFA;
+    --color-texto: #333333;
+}
+
+/* Reset Básico y Tipografía */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, sans-serif;
+    background-color: var(--color-fondo);
+    color: var(--color-texto);
+    line-height: 1.6;
+    -webkit-font-smoothing: antialiased;
+}
+
+/* Header y Navegación (Diseño Mobile-First) */
+.header {
+    background-color: #FFFFFF;
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.logo {
+    width: 100%;
+    max-width: 220px;
+    height: auto;
+    display: block;
+}
+
+.nav-menu ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: var(--color-roca);
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    transition: color 0.3s ease;
+}
+
+.nav-menu a:hover,
+.nav-menu a:active {
+    color: var(--color-azul);
+}
+
+/* Footer Básico */
+.footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    background-color: var(--color-roca);
+    color: #FFFFFF;
+    font-size: 0.9rem;
+}
+
+/* Media Query para Tablets y Desktop */
+@media (min-width: 768px) {
+    .header {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1rem 5%;
+    }
+    
+    .nav-menu a {
+        font-size: 0.95rem;
+    }
+}
