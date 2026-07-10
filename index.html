@@ -1,6 +1,101 @@
-Mi Portafolio de Proyectos
-    
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudio ROCA - Corte y Diseño</title>
+    <style>
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+            margin: 0; 
+            padding: 0; 
+            background-color: #f4f4f9; 
+            color: #333; 
+        }
+        header { 
+            background-color: #1a252f; 
+            color: white; 
+            padding: 3rem 1rem; 
+            text-align: center; 
+        }
+        header h1 { margin: 0; font-size: 2.5rem; letter-spacing: 2px; }
+        header p { font-size: 1.2rem; color: #bdc3c7; }
+        .container { max-width: 1000px; margin: 2rem auto; padding: 0 1rem; }
+        .services { display: flex; gap: 1.5rem; margin-bottom: 3rem; flex-wrap: wrap; }
+        .service-card { 
+            background: white; 
+            padding: 1.5rem; 
+            border-radius: 8px; 
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05); 
+            flex: 1; 
+            min-width: 250px; 
+            text-align: center; 
+            border-top: 4px solid #3498db;
+        }
+        h2 { text-align: center; color: #2c3e50; margin-bottom: 1.5rem; }
+        .gallery { 
+            display: grid; 
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
+            gap: 1.5rem; 
+        }
+        .gallery-item { 
+            background: #e0e0e0; 
+            height: 250px; 
+            border-radius: 8px; 
+            display: flex; 
+            align-items: center; 
+            justify-content: center; 
+            color: #7f8c8d; 
+            font-style: italic; 
+            border: 2px dashed #bdc3c7;
+        }
+        footer { 
+            text-align: center; 
+            padding: 2rem; 
+            background-color: #ecf0f1; 
+            margin-top: 3rem; 
+            color: #7f8c8d;
+        }
+    </style>
+</head>
+<body>
 
+    <header>
+        <h1>Estudio ROCA</h1>
+        <p>Corte y Diseño | Taller de fabricación digital en MDF y Acrílico</p>
+    </header>
 
-    ¡Hola Mundo! Bienvenido a mi sitio web
-    Este sitio está alojado gratuitamente en GitHub Pages.
+    <div class="container">
+        <h2>Nuestros Servicios</h2>
+        <div class="services">
+            <div class="service-card">
+                <h3>Router CNC</h3>
+                <p>Mecanizado preciso y desbaste para proyectos en madera y paneles de gran formato.</p>
+            </div>
+            <div class="service-card">
+                <h3>Corte Láser</h3>
+                <p>Cortes limpios y grabados de alta resolución con acabado profesional.</p>
+            </div>
+            <div class="service-card">
+                <h3>Diseño Personalizado</h3>
+                <p>Modelado y vectorización a la medida para materializar tus ideas.</p>
+            </div>
+        </div>
+
+        <h2>Catálogo de Proyectos</h2>
+        <div class="gallery">
+            <!-- Estas son cajas de prueba donde irán tus fotos reales -->
+            <div class="gallery-item">[ Espacio para Foto de Proyecto 1 ]</div>
+            <div class="gallery-item">[ Espacio para Foto de Proyecto 2 ]</div>
+            <div class="gallery-item">[ Espacio para Foto de Proyecto 3 ]</div>
+            <div class="gallery-item">[ Espacio para Foto de Proyecto 4 ]</div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Contáctanos para cotizar tu proyecto.</p>
+        <p>© 2026 Estudio ROCA</p>
+    </footer>
+
+</body>
+</html>
