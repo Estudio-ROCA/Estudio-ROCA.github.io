@@ -144,3 +144,78 @@ body {
         font-size: 1.25rem;
     }
 }
+/* --- Sección Portafolio --- */
+.portafolio {
+    padding: 4rem 1.5rem;
+    background-color: var(--color-fondo);
+    text-align: center;
+}
+
+.portafolio h2 {
+    color: var(--color-azul);
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.portafolio-sub {
+    color: var(--color-roca);
+    margin-bottom: 3rem;
+    font-size: 1.05rem;
+}
+
+.grid-portafolio {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.portafolio-item {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    transition: transform 0.3s ease;
+}
+
+.portafolio-item:hover {
+    transform: translateY(-4px);
+}
+
+/* Espacio temporal para cuando subas tus fotos reales */
+.placeholder-img {
+    background-color: var(--color-azul);
+    color: #FFFFFF;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+.portafolio-info {
+    padding: 1.5rem;
+    text-align: left;
+}
+
+.portafolio-info h3 {
+    color: var(--color-roca);
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+}
+
+.portafolio-info p {
+    color: #555555;
+    font-size: 0.95rem;
+}
+
+/* Media Query para Tablets y Desktop (Portafolio a 3 columnas) */
+@media (min-width: 768px) {
+    .grid-portafolio {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
