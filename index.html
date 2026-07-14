@@ -3,13 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Estudio ROCA - Corte y Diseño CNC</title>
-    <meta name="description" content="Taller de fabricación digital en Durango. Especialistas en Router CNC y Corte Láser en MDF y acrílico.">
-    <!-- Esta línea conecta el HTML con tu archivo de diseño -->
-    <link rel="stylesheet" href="css/style.css">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudio ROCA - Corte y Diseño CNC en Durango</title>
     
     <!-- SEO Básico -->
@@ -22,50 +15,59 @@
     <meta property="og:title" content="Estudio ROCA - Fabricación Digital y CNC">
     <meta property="og:description" content="Taller especialista en Router CNC y Corte Láser en Durango. Hacemos realidad tus proyectos a medida.">
     <meta property="og:url" content="https://Estudio-ROCA.github.io/">
-    <!-- Ruta absoluta a tu logotipo para que las apps lo detecten -->
     <meta property="og:image" content="https://Estudio-ROCA.github.io/img/IMG_20260227_073117_495.png">
     
     <!-- Conexión a Estilos -->
     <link rel="stylesheet" href="css/style.css">
 </head>
+<body>
+    <!-- Header y Navegación -->
+    <header class="header">
+        <div class="logo-container">
+            <img src="img/IMG_20260227_073117_495.png" alt="Logotipo Estudio ROCA" class="logo">
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#proceso">Servicios</a></li>
+                <li><a href="#portafolio">Portafolio</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <main>
-       <!-- Pegar aquí futuras secciones -->
+        <!-- Sección Hero -->
         <section id="hero" class="hero">
             <div class="hero-content">
                 <h1>Fabricación Digital y Diseño CNC</h1>
                 <p>Especialistas en proyectos a medida con Router CNC y Corte Láser sobre MDF, Acrílico y más.</p>
-                <!-- Reemplaza las X con tu número de teléfono incluyendo el código de país (ej. 52 para México) -->
                 <a href="https://wa.me/526181113931" class="btn-primary" target="_blank" rel="noopener noreferrer">Cotizar Proyecto</a>
             </div>
         </section>
+
         <!-- Sección Proceso de Trabajo -->
         <section id="proceso" class="proceso">
             <h2>Cómo Trabajamos</h2>
             <div class="grid-proceso">
-                
                 <div class="proceso-paso">
                     <div class="paso-numero">1</div>
                     <h3>Diseño Técnico CAD</h3>
                     <p>Vectorizamos tu idea o recibimos tus planos. Validamos geometrías e iteramos el diseño en plataformas como SolidWorks, Fusion 360 o AutoCAD para garantizar medidas exactas y ensambles perfectos.</p>
                 </div>
-                
                 <div class="proceso-paso">
                     <div class="paso-numero">2</div>
                     <h3>Configuración CAM</h3>
                     <p>Seleccionamos la herramienta ideal para tu material. Desde fresas de 2 mm para detalles ultra finos y cruces de madera, hasta la calibración del láser para cortes limpios en acrílico.</p>
                 </div>
-                
                 <div class="proceso-paso">
                     <div class="paso-numero">3</div>
                     <h3>Corte y Entrega</h3>
                     <p>Ejecutamos el mecanizado en nuestro Router CNC con precisión milimétrica. Revisamos acabados y entregamos tu proyecto listo para usarse o instalarse.</p>
                 </div>
-
             </div>
         </section>
-    </main>
-<!-- Sección Portafolio Actualizada -->
+
+        <!-- Sección Portafolio -->
         <section id="portafolio" class="portafolio">
             <h2>Portafolio de Proyectos</h2>
             <p class="portafolio-sub">Una muestra de nuestro trabajo en corte y grabado digital.</p>
@@ -73,7 +75,6 @@
                 
                 <!-- Proyecto 1 -->
                 <div class="portafolio-item">
-                    <!-- Sube tu foto con este nombre o cambia el src aquí -->
                     <img src="img/portafolio/corte-cnc-mdf-01.jpg" alt="Corte Router CNC en MDF" class="portafolio-img">
                     <div class="portafolio-info">
                         <h3>Rotulado y Panel Decorativo</h3>
@@ -101,7 +102,8 @@
 
             </div>
         </section>
-    <!-- Pegar aquí: Sección Contacto -->
+
+        <!-- Sección Contacto -->
         <section id="contacto" class="contacto">
             <h2>Contacto y Cotizaciones</h2>
             <p class="contacto-sub">¿Tienes un proyecto en mente? Escríbenos para hacerlo realidad.</p>
@@ -110,7 +112,6 @@
                     <h3>Información del Taller</h3>
                     <ul>
                         <li><strong>Ubicación:</strong> Calle Valle del Sur, Col. Las Milpas. Durango, Dgo.</li>
-                        <!-- Reemplaza las X con tu número telefónico -->
                         <li><strong>WhatsApp:</strong> <a href="https://wa.me/526181113931" target="_blank">+52 618 111 3931</a></li>
                         <li><strong>Horario:</strong> Lunes a Viernes, 9:00 AM - 6:00 PM</li>
                     </ul>
@@ -122,7 +123,9 @@
                 </div>
             </div>
         </section>
-   <!-- Pegar en lugar del footer anterior, justo antes de <script src="js/main.js"></script> -->
+    </main>
+
+    <!-- Footer con Redes Sociales -->
     <footer class="footer">
         <div class="footer-social">
             <!-- Reemplaza el '#' con los enlaces reales a los perfiles del taller -->
@@ -139,6 +142,7 @@
             <path d="M16.05 0c-8.8 0-16 7.15-16 15.9 0 2.8.7 5.55 2.1 7.95L.4 31.95l8.35-2.15c2.3 1.3 4.9 2 7.7 2 8.8 0 16-7.15 16-15.9S24.85 0 16.05 0zm0 29.15c-2.4 0-4.7-.65-6.8-1.9l-.5-.3-5.05 1.3 1.35-4.9-.3-.5c-1.35-2.2-2.1-4.7-2.1-7.3 0-7.35 6-13.3 13.4-13.3 7.35 0 13.3 6 13.3 13.3s-5.95 13.3-13.3 13.3zm7.35-9.85c-.4-.2-2.35-1.15-2.7-1.3-.35-.15-.6-.2-.85.2-.25.4-1.05 1.3-1.25 1.55-.2.25-.45.3-.85.1-1.35-.65-2.5-1.45-3.6-2.9-.3-.4-.05-.6.15-.8.2-.2.4-.45.6-.7.2-.2.3-.35.4-.6.1-.25.05-.5-.05-.7-.1-.2-.85-2.1-1.15-2.9-.3-.75-.6-.65-.85-.65h-.7c-.25 0-.7.1-1.05.5-.35.4-1.35 1.35-1.35 3.25 0 1.9 1.4 3.75 1.6 4 1.15 1.55 3.3 4.35 5.9 5.4 2.1.85 3.2.95 4.3.8.15-.05 1.6-.65 1.85-1.3.25-.65.25-1.2.15-1.3-.1-.1-.35-.15-.75-.35z"/>
         </svg>
     </a>
+
     <!-- Modal (Lightbox) para Portafolio -->
     <div id="modal-galeria" class="modal">
         <span class="cerrar-modal">&times;</span>
@@ -149,4 +153,3 @@
     <script src="js/main.js"></script>
 </body>
 </html>
-
