@@ -344,3 +344,67 @@ body {
     color: var(--color-madera);
     text-decoration: none;
 }
+/* --- Sección Proceso de Trabajo --- */
+.proceso {
+    padding: 4rem 1.5rem;
+    background-color: var(--color-roca);
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.proceso h2 {
+    color: var(--color-fondo);
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.grid-proceso {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.proceso-paso {
+    position: relative;
+    padding: 2rem 1.5rem;
+    background-color: rgba(255, 255, 255, 0.05);
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.paso-numero {
+    background-color: var(--color-madera);
+    color: #FFFFFF;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0 auto 1rem auto;
+}
+
+.proceso-paso h3 {
+    color: var(--color-fondo);
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.proceso-paso p {
+    color: #CCCCCC;
+    font-size: 0.95rem;
+    line-height: 1.6;
+}
+
+/* Media Query (3 columnas en pantallas grandes) */
+@media (min-width: 768px) {
+    .grid-proceso {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
