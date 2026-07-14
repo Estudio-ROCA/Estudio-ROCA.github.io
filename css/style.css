@@ -296,3 +296,51 @@ body {
         grid-template-columns: 1fr 1fr;
     }
 }
+/* --- Modal (Lightbox) Portafolio --- */
+.portafolio-img {
+    cursor: pointer; /* Cambia el cursor para indicar que es clickeable */
+}
+
+.modal {
+    display: none; /* Oculto por defecto */
+    position: fixed;
+    z-index: 1000;
+    padding-top: 5vh;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.85); /* Fondo oscuro semitransparente */
+}
+
+.modal-contenido {
+    margin: auto;
+    display: block;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 4px;
+    animation: zoom 0.3s ease; /* Animación de apertura */
+}
+
+@keyframes zoom {
+    from {transform:scale(0.8); opacity: 0;}
+    to {transform:scale(1); opacity: 1;}
+}
+
+.cerrar-modal {
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.cerrar-modal:hover,
+.cerrar-modal:focus {
+    color: var(--color-madera);
+    text-decoration: none;
+}
